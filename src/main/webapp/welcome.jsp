@@ -17,13 +17,20 @@
 		}
 	%>
 	
-	
-	<div class="container my-3">
-		<form class="nav justify-content-end" action="Logout">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Welcome Page</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <form class="nav justify-content-end" action="Logout">
 			<input class="btn btn-primary my-3" type="submit" value="Logout">
 		</form>
+	  </div>
+	</nav>
+	<div class="container my-3">
 	
-		<h2>Welcome ${username}!</h2>
+		<h2 class="mb-3">Welcome ${username}!</h2>
 		
 		<ul>
 			<li> <a class="my-6" href="videos.jsp">Videos here</a> </li>

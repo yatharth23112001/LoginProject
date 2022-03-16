@@ -8,9 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Login Page</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	  </div>
+	</nav>
 	<div class="container">
 		<form action="Login" method="post">
-			Enter username: <input class="my-3" type="text" name="uname"><br>
+			Enter username: <input class="my-3" type="text" name="uname" ><br>
 			Enter password: <input class="my-3" type="password" name="pass"><br>
 			<input class="btn btn-primary my-3" type="submit" value="login">
 		</form>

@@ -16,10 +16,24 @@
 		}
 	%>
 	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Choose your favourite genre</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <form class="nav justify-content-end" action="Logout">
+			<input class="btn btn-primary my-3" type="submit" value="Logout">
+		</form>
+	  </div>
+	</nav>
 	<div class="container">
 		<form class="my-3" action="Recommendation" method="post">
-			Enter your favorite genre : <input type="text" name="genre"><br>
 			
+			<div class="mb-3">
+			  <label for="formGroupExampleInput" class="form-label">Enter your favorite genre :</label>
+			  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example ~pop" name="genre">
+			</div>
 			<input class="btn btn-primary my-3" type="submit" value="Recommendation">
 		</form>
 	</div>
